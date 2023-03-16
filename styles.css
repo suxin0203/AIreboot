@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #e0e0e0;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #f7f7f7;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 41px 41px 82px #bebebe, -41px -41px 82px #ffffff;
+}
+strong{
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0);
+
+}
+.chat-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.chat-header h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.chat-messages {
+  height: calc(100vh - 550px);
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  display: none;
+}s
+.chat-messages p {
+  margin-bottom: 10px;
+  /* // 背景色透明 */
+  background-color: rgba(0, 0, 0, 0);
+}
+span{
+  background-color: rgba(0, 0, 0, 0);
+}
+.chat-input {
+  display: flex;
+  padding: 10px;
+}
+
+.chat-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  width: 80px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #555;
+}
+pre {
+  /* 设置背景色 */
+  background-color: #f5f5f5;
+  /* 设置边框 */
+  border: 1px solid #ccc;
+  /* 设置字体 */
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  /* 设置字号 */
+  font-size: 14px;
+  /* 设置行高 */
+  line-height: 1.5;
+  /* 设置空白符的处理方式 */
+  white-space: pre-wrap;
+  /* 设置文本对齐方式 */
+  text-align: left;
+  /* 设置内边距 */
+  padding: 10px;
+  /* 设置外边距 */
+  margin: 10px 0;
+  /* 设置代码高亮样式 */
+  color: #333;
+}
+pre code {
+  /* 设置代码高亮样式 */
+  color: #8d8b8b;
+  background: #000;
+}
+.js-code {
+  color: #023e01;
+}
+.json-code {
+  color: #361515;
+}
+.html-code {
+  color: #242a0f;
+}
+.css-code {
+  color: #11383f;
+}
+.java-code {
+  color: #0b343e;
+}
+.php-code {
+  color: #171436;
+}
+.python-code {
+  color: #3a041a;
+}
+.c-code {
+  color: #04352e;
+}
+.bash-code {
+  color: #1d0a22;
+}
+.message-time {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.shad {
+  border-radius: 14px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 9px 9px 18px #bebebe, -9px -9px 18px #ffffff;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    width: 95%;
+    padding: 5vh 5vw;
+  }
+  .chat-messages{
+    height: calc(100vh - 400px);
+  }
+}
